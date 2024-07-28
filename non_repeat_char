@@ -1,0 +1,12 @@
+def characters_counted(char1):
+    print(char1)
+    new1=list(char1)
+    count=0
+    new2=[]
+    for i in new1:
+        if new1.count(i)==1:
+            new2.append(i)
+    return len(new2)
+char2=input("Enter a string to find the non repeating chars : ")
+char2=''.join(char2.split())
+characters_counted(char2)
